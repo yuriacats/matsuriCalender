@@ -1,0 +1,7 @@
+functions/node_modules
+functions/.git
+functions/.gitignore
+.git
+.gitignore
+.github/
+.idea/
