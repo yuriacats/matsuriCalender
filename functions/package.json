@@ -25,7 +25,8 @@
     "eslint-plugin-import": "^2.22.0",
     "firebase-functions-test": "^0.2.0",
     "typescript": "^3.8.0",
-    "@types/node": "14.18.3"
+    "@types/node": "14.18.3",
+    "@types/node-fetch": "^2.6.1"
   },
   "private": true
 }
