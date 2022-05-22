@@ -6,7 +6,7 @@ ARG dev_project_id
 
 ENV FIREBASE_TOKEN=${firebase_token}
 ENV GCLOUD_PROJECT=${ci_project_id}
-ENV GOOGLE_APPLICATION_CREDENTIALS=/src/service-account-key.json
+#ENV GOOGLE_APPLICATION_CREDENTIALS=/src/service-account-key.json
 
 WORKDIR /app
 
@@ -14,11 +14,11 @@ COPY ["firebase.json","./"]
 
 RUN yarn global add firebase-tools
 
-RUN firebase use ${dev_project_id}
+#RUN firebase use ${dev_project_id}
 
 WORKDIR /src
 
-COPY ["package.json","./"]
+COPY ["functions/package.json","./"]
 
 RUN yarn install
 
